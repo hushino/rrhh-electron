@@ -1,0 +1,28 @@
+{
+  "name": "rrhh",
+  "version": "1.0.0",
+  "description": "rrhh",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "author": "Hushino",
+  "license": "Private",
+  "devDependencies": {
+    "electron": "^10.1.0",
+    "electron-builder": "^22.8.0"
+  },
+  "electronBuilder": {
+    "build": {
+      "productName": "RRHH",
+      "appId": "hushino.rrhh",
+      "win": {
+        "target": [
+          "portable"
+        ]
+      }
+    }
+  }
+}
